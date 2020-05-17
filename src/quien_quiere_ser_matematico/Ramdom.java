@@ -16,7 +16,4 @@ public class Ramdom {
    public boolean Pregunta_2= false;
    public boolean Pregunta_3= false;
    
-   
-
-    
 }

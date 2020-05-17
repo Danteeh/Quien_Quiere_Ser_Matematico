@@ -4,10 +4,11 @@ package Frames_Sexto;
 import quien_quiere_ser_matematico.Ramdom;
 public class Pregunta_2 extends javax.swing.JFrame {
 
-        
+        int datos_2=0;
         
         
     public Pregunta_2() {
+        
         initComponents();
                
          if (Pregunta_1.datos_1==2){

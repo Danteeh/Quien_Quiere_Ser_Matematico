@@ -80,7 +80,7 @@ public class Pregunta_1 extends javax.swing.JFrame {
         
         
           
-       if (obj_Aleatorio.N_Aleatorio==2 && obj_Aleatorio.Pregunta_2==true){
+       if (obj_Aleatorio.N_Aleatorio==2 && Pregunta_2.Datos==true){
            
             obj_Aleatorio.N_Aleatorio=3;
         }
