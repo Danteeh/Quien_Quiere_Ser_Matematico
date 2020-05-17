@@ -8,8 +8,8 @@ import quien_quiere_ser_matematico.Ramdom;
 
 public class Pregunta_1 extends javax.swing.JFrame {
 
-     public static int datos_1;
-     public static int auxiliar_Pregunta_1;
+  
+     public boolean Paso_Pregunta_1;
    
     public Pregunta_1() {
         initComponents();
@@ -68,20 +68,21 @@ public class Pregunta_1 extends javax.swing.JFrame {
         
         obj_Aleatorio.N_Aleatorio=obj_Aleatorio.Aleatorio_Variable.nextInt(4);
         
-          if (obj_Aleatorio.N_Aleatorio==0){
-              obj_Aleatorio.N_Aleatorio=2;
-               datos_1=2;
+          if (obj_Aleatorio.N_Aleatorio==0 && Pregunta_2.Paso_Pregunta_2==true){
+              obj_Aleatorio.N_Aleatorio=+1;
+               
           }
           
           if (obj_Aleatorio.N_Aleatorio==1 ){
         
             obj_Aleatorio.N_Aleatorio=2;
-             datos_1=2;
+            
         }
         
         
           
-       if (obj_Aleatorio.N_Aleatorio==2 && Pregunta_2.datos_2==2){
+       if (obj_Aleatorio.N_Aleatorio==2 ){
+           
            
             obj_Aleatorio.N_Aleatorio=3;
         }
@@ -89,11 +90,11 @@ public class Pregunta_1 extends javax.swing.JFrame {
         //Sentencia if para la pregunta 2 
         
     
-        if (obj_Aleatorio.N_Aleatorio==2 && obj_Aleatorio.Pregunta_2==false ){
+        if (obj_Aleatorio.N_Aleatorio==2 ){
             
-            obj_Aleatorio.Pregunta_1=true;
             
-            datos_1=2;
+            
+            
             
             Pregunta_2 Frame_Pregunta_2 = new Pregunta_2();
             
@@ -107,15 +108,15 @@ public class Pregunta_1 extends javax.swing.JFrame {
         
         //sentencia if para pregunta 3 
         
-         if (obj_Aleatorio.N_Aleatorio==3 && obj_Aleatorio.Pregunta_3==true){
+         if (obj_Aleatorio.N_Aleatorio==3 ){
         
             obj_Aleatorio.N_Aleatorio=4;
         }
         
-          if (obj_Aleatorio.N_Aleatorio==3 && obj_Aleatorio.Pregunta_3==false ){
+          if (obj_Aleatorio.N_Aleatorio==3  ){
             
-              datos_1=3;
-            obj_Aleatorio.Pregunta_3=true;
+             
+           
             
             Pregunta_3 Frame_Pregunta_3 = new Pregunta_3();
             

@@ -57,14 +57,15 @@ public class Menu_de_inicio extends javax.swing.JFrame {
           }
         //sentencia if para la pregunta 1 
         
-      if (obj_Aleatorio.N_Aleatorio==1 && obj_Aleatorio.Pregunta_1==true){
+      if (obj_Aleatorio.N_Aleatorio==1 ){
         
             obj_Aleatorio.N_Aleatorio=2;
         }
         
-        if (obj_Aleatorio.N_Aleatorio==1 && obj_Aleatorio.Pregunta_1==false ){
+        if (obj_Aleatorio.N_Aleatorio==1 ){
             
-            obj_Aleatorio.Pregunta_1=true;
+            
+            
             
             Pregunta_1 Frame_Pregunta_1 = new Pregunta_1();
             
@@ -77,16 +78,16 @@ public class Menu_de_inicio extends javax.swing.JFrame {
         //Sentencia if para la pregunta 2 
         
         
-       if (obj_Aleatorio.N_Aleatorio==2 && obj_Aleatorio.Pregunta_2==true){
+       if (obj_Aleatorio.N_Aleatorio==2 ){
         
             obj_Aleatorio.N_Aleatorio=3;
         }
         
         
         
-        if (obj_Aleatorio.N_Aleatorio==2 && obj_Aleatorio.Pregunta_2==false ){
+        if (obj_Aleatorio.N_Aleatorio==2  ){
             
-            obj_Aleatorio.Pregunta_1=true;
+          
             
             Pregunta_2 Frame_Pregunta_2 = new Pregunta_2();
             
@@ -99,14 +100,14 @@ public class Menu_de_inicio extends javax.swing.JFrame {
         
         //sentencia if para pregunta 3 
         
-         if (obj_Aleatorio.N_Aleatorio==3 && obj_Aleatorio.Pregunta_3==true){
+         if (obj_Aleatorio.N_Aleatorio==3 ){
         
             obj_Aleatorio.N_Aleatorio=4;
         }
         
-          if (obj_Aleatorio.N_Aleatorio==3 && obj_Aleatorio.Pregunta_3==false ){
+          if (obj_Aleatorio.N_Aleatorio==3 ){
             
-            obj_Aleatorio.Pregunta_3=true;
+          
             
             Pregunta_3 Frame_Pregunta_3 = new Pregunta_3();
             
