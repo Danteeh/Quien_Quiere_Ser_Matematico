@@ -11,9 +11,5 @@ public class Ramdom {
    public int N_Aleatorio;
     //auxiliar
     public int aux=0;
-    //comprobante
-   public boolean Pregunta_1= false; 
-   public boolean Pregunta_2= false;
-   public boolean Pregunta_3= false;
    
 }

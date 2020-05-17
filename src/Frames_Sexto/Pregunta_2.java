@@ -1,27 +1,18 @@
 
 package Frames_Sexto;
 
+import static Frames_Sexto.Pregunta_1.datos_1;
 import quien_quiere_ser_matematico.Ramdom;
+
 public class Pregunta_2 extends javax.swing.JFrame {
 
-        int datos_2=0;
+        public static int datos_2;
         
         
     public Pregunta_2() {
         
         initComponents();
                
-         if (Pregunta_1.datos_1==2){
-             
-             System.out.println("LLego un dos");
-         }
-         
-         if (Pregunta_1.datos_1==3){
-             
-             System.out.println("LLego un ");
-         }
-
-        
     }
 
  
@@ -71,7 +62,79 @@ public class Pregunta_2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-     
+        
+        Ramdom obj_Aleatorio =new Ramdom();
+        
+        obj_Aleatorio.N_Aleatorio = obj_Aleatorio.Aleatorio_Variable.nextInt(4);
+        
+          if (obj_Aleatorio.N_Aleatorio==0 && Pregunta_1.datos_1==1){
+              datos_2=2;
+              obj_Aleatorio.N_Aleatorio=3; 
+          }
+          
+          if (obj_Aleatorio.N_Aleatorio==1 ){
+            obj_Aleatorio.N_Aleatorio=3;
+             datos_2=2;
+        }
+        
+        
+          
+       if (obj_Aleatorio.N_Aleatorio==2 ){
+           
+            obj_Aleatorio.N_Aleatorio=3;
+        }
+        
+        //Sentencia if para la pregunta 2 
+        
+    
+        if (obj_Aleatorio.N_Aleatorio==2 && obj_Aleatorio.Pregunta_2==false ){
+            
+            obj_Aleatorio.Pregunta_1=true;
+            
+            datos_1=2;
+            
+            Pregunta_2 Frame_Pregunta_2 = new Pregunta_2();
+            
+            Frame_Pregunta_2.setVisible(true);
+            Frame_Pregunta_2.setLocationRelativeTo(null);
+        
+          
+        
+        
+        }   
+        
+        //sentencia if para pregunta 3 
+        
+         if (obj_Aleatorio.N_Aleatorio==3 && obj_Aleatorio.Pregunta_3==true){
+        
+            obj_Aleatorio.N_Aleatorio=4;
+        }
+        
+          if (obj_Aleatorio.N_Aleatorio==3 && obj_Aleatorio.Pregunta_3==false ){
+            
+              datos_1=3;
+            obj_Aleatorio.Pregunta_3=true;
+            
+            Pregunta_3 Frame_Pregunta_3 = new Pregunta_3();
+            
+            Frame_Pregunta_3.setVisible(true);
+            Frame_Pregunta_3.setLocationRelativeTo(null);
+        
+        
+        }
+        
+           
+        
+        
+       dispose(); 
+        
+        
+        
+        
+        
+        
+        
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
 

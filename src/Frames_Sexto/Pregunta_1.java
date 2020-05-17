@@ -9,6 +9,7 @@ import quien_quiere_ser_matematico.Ramdom;
 public class Pregunta_1 extends javax.swing.JFrame {
 
      public static int datos_1;
+     public static int auxiliar_Pregunta_1;
    
     public Pregunta_1() {
         initComponents();
@@ -80,7 +81,7 @@ public class Pregunta_1 extends javax.swing.JFrame {
         
         
           
-       if (obj_Aleatorio.N_Aleatorio==2 && Pregunta_2.Datos==true){
+       if (obj_Aleatorio.N_Aleatorio==2 && Pregunta_2.datos_2==2){
            
             obj_Aleatorio.N_Aleatorio=3;
         }

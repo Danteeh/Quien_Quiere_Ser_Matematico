@@ -49,7 +49,7 @@ public class Menu_de_inicio extends javax.swing.JFrame {
         
         Ramdom obj_Aleatorio =new Ramdom();
         
-        obj_Aleatorio.N_Aleatorio=obj_Aleatorio.Aleatorio_Variable.nextInt(2);
+        obj_Aleatorio.N_Aleatorio=obj_Aleatorio.Aleatorio_Variable.nextInt(4);
         
           if (obj_Aleatorio.N_Aleatorio==0){
               obj_Aleatorio.N_Aleatorio=1;
