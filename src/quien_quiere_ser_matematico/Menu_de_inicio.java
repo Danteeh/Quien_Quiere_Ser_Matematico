@@ -56,11 +56,7 @@ public class Menu_de_inicio extends javax.swing.JFrame {
               System.out.println("Salio 0");
           }
         //sentencia if para la pregunta 1 
-        
-      if (obj_Aleatorio.N_Aleatorio==1 ){
-        
-            obj_Aleatorio.N_Aleatorio=2;
-        }
+   
         
         if (obj_Aleatorio.N_Aleatorio==1 ){
             
@@ -76,12 +72,7 @@ public class Menu_de_inicio extends javax.swing.JFrame {
           
         
         //Sentencia if para la pregunta 2 
-        
-        
-       if (obj_Aleatorio.N_Aleatorio==2 ){
-        
-            obj_Aleatorio.N_Aleatorio=3;
-        }
+       
         
         
         
@@ -98,12 +89,6 @@ public class Menu_de_inicio extends javax.swing.JFrame {
         
         }   
         
-        //sentencia if para pregunta 3 
-        
-         if (obj_Aleatorio.N_Aleatorio==3 ){
-        
-            obj_Aleatorio.N_Aleatorio=4;
-        }
         
           if (obj_Aleatorio.N_Aleatorio==3 ){
             

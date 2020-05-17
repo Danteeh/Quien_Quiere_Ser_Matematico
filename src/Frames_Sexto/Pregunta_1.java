@@ -9,7 +9,7 @@ import quien_quiere_ser_matematico.Ramdom;
 public class Pregunta_1 extends javax.swing.JFrame {
 
   
-     public boolean Paso_Pregunta_1;
+     public static boolean Paso_Pregunta_1=false;
    
     public Pregunta_1() {
         initComponents();
@@ -64,73 +64,60 @@ public class Pregunta_1 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
-         Ramdom obj_Aleatorio =new Ramdom();
+          Ramdom obj_Aleatorio =new Ramdom();
         
         obj_Aleatorio.N_Aleatorio=obj_Aleatorio.Aleatorio_Variable.nextInt(4);
         
-          if (obj_Aleatorio.N_Aleatorio==0 && Pregunta_2.Paso_Pregunta_2==true){
-              obj_Aleatorio.N_Aleatorio=+1;
+          if (obj_Aleatorio.N_Aleatorio==0 && Paso_Pregunta_1==false ){
+              obj_Aleatorio.N_Aleatorio=2;
                
           }
           
-          if (obj_Aleatorio.N_Aleatorio==1 ){
+          if (obj_Aleatorio.N_Aleatorio==1 && Paso_Pregunta_1== false){
         
             obj_Aleatorio.N_Aleatorio=2;
             
         }
         
-        
-          
-       if (obj_Aleatorio.N_Aleatorio==2 ){
-           
+     
+       if (obj_Aleatorio.N_Aleatorio==2 && Pregunta_2.Paso_Pregunta_2 == true ){
            
             obj_Aleatorio.N_Aleatorio=3;
         }
-        
-        //Sentencia if para la pregunta 2 
-        
-    
-        if (obj_Aleatorio.N_Aleatorio==2 ){
-            
-            
-            
-            
-            
-            Pregunta_2 Frame_Pregunta_2 = new Pregunta_2();
-            
-            Frame_Pregunta_2.setVisible(true);
-            Frame_Pregunta_2.setLocationRelativeTo(null);
-        
-          
-        
-        
-        }   
-        
-        //sentencia if para pregunta 3 
-        
-         if (obj_Aleatorio.N_Aleatorio==3 ){
+       
+        if (obj_Aleatorio.N_Aleatorio== 3 && Pregunta_3.Paso_Pregunta_3 == true  ){
         
             obj_Aleatorio.N_Aleatorio=4;
         }
-        
-          if (obj_Aleatorio.N_Aleatorio==3  ){
+        if (obj_Aleatorio.N_Aleatorio == 2 && Pregunta_2.Paso_Pregunta_2==false){
             
-             
-           
+        Pregunta_2 Frame_Pregunta_2 = new Pregunta_2();
             
-            Pregunta_3 Frame_Pregunta_3 = new Pregunta_3();
-            
-            Frame_Pregunta_3.setVisible(true);
-            Frame_Pregunta_3.setLocationRelativeTo(null);
-        
+            Frame_Pregunta_2.setVisible(true);
+            Frame_Pregunta_2.setLocationRelativeTo(null);
+          
         
         }
         
+   
+        
+        
+         if (obj_Aleatorio.N_Aleatorio == 3 && Pregunta_3.Paso_Pregunta_3==false){
+            
+        Pregunta_3 Frame_Pregunta_3 = new Pregunta_3();
+            
+            Frame_Pregunta_3.setVisible(true);
+            Frame_Pregunta_3.setLocationRelativeTo(null);
+          
+        
+        }
            
-        
-        
+        System.out.println("Numero"+obj_Aleatorio.N_Aleatorio);
+        Paso_Pregunta_1=true;
        dispose();
-        
+    
+
+         
     }//GEN-LAST:event_jButton1ActionPerformed
 
  

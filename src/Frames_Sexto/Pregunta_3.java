@@ -12,8 +12,8 @@ package Frames_Sexto;
 public class Pregunta_3 extends javax.swing.JFrame {
       
     
-    public static int datos_3;
-    public static boolean Paso_Pregunta_3;
+ 
+    public static boolean Paso_Pregunta_3=false;
       
     public Pregunta_3() {
         initComponents();

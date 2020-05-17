@@ -6,9 +6,14 @@ import quien_quiere_ser_matematico.Ramdom;
 public class Pregunta_2 extends javax.swing.JFrame {
 
        
-        public static boolean  Paso_Pregunta_2;
+        public static boolean  Paso_Pregunta_2 =false;
         
+                    
     public Pregunta_2() {
+        
+        if (Pregunta_1.Paso_Pregunta_1== true){
+            System.out.println("Se paso por el uno");
+        }
         
         initComponents();
                
@@ -62,40 +67,45 @@ public class Pregunta_2 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
-        Ramdom obj_Aleatorio =new Ramdom();
+      
+           Ramdom obj_Aleatorio =new Ramdom();
         
-        obj_Aleatorio.N_Aleatorio = obj_Aleatorio.Aleatorio_Variable.nextInt(4);
+        obj_Aleatorio.N_Aleatorio=obj_Aleatorio.Aleatorio_Variable.nextInt(4);
         
-          if (obj_Aleatorio.N_Aleatorio==0 ){
-             
-              obj_Aleatorio.N_Aleatorio=3; 
+          if (obj_Aleatorio.N_Aleatorio==0 && Pregunta_1.Paso_Pregunta_1==true){
+              obj_Aleatorio.N_Aleatorio=1;
+               
           }
           
-          if (obj_Aleatorio.N_Aleatorio==1 ){
-            obj_Aleatorio.N_Aleatorio=3;
+          if (obj_Aleatorio.N_Aleatorio==1 && Pregunta_1.Paso_Pregunta_1== true ){
+        
+            obj_Aleatorio.N_Aleatorio=2;
             
         }
         
-        
-          
+     
        if (obj_Aleatorio.N_Aleatorio==2 ){
            
             obj_Aleatorio.N_Aleatorio=3;
         }
+       
+        if (obj_Aleatorio.N_Aleatorio== 3 && Pregunta_3.Paso_Pregunta_3 == true  ){
+        
+            obj_Aleatorio.N_Aleatorio=4;
+        }
+        
         
         //Sentencia if para la pregunta 2 
         
     
-        if (obj_Aleatorio.N_Aleatorio==2 ){
+        if (obj_Aleatorio.N_Aleatorio ==0 && Pregunta_1.Paso_Pregunta_1 ==false){
             
-           
             
-         
+     
+            Pregunta_1 Frame_Pregunta_1 = new Pregunta_1();
             
-            Pregunta_2 Frame_Pregunta_2 = new Pregunta_2();
-            
-            Frame_Pregunta_2.setVisible(true);
-            Frame_Pregunta_2.setLocationRelativeTo(null);
+            Frame_Pregunta_1.setVisible(true);
+            Frame_Pregunta_1.setLocationRelativeTo(null);
         
           
         
@@ -104,36 +114,29 @@ public class Pregunta_2 extends javax.swing.JFrame {
         
         //sentencia if para pregunta 3 
         
-         if (obj_Aleatorio.N_Aleatorio==3 ){
         
-            obj_Aleatorio.N_Aleatorio=4;
-        }
-        
-          if (obj_Aleatorio.N_Aleatorio==3 ){
+          if (obj_Aleatorio.N_Aleatorio==1 && Pregunta_1.Paso_Pregunta_1== false  ){
             
+             
            
+            Pregunta_1 Frame_Pregunta_1 = new Pregunta_1();
             
-            
-            Pregunta_3 Frame_Pregunta_3 = new Pregunta_3();
-            
-            Frame_Pregunta_3.setVisible(true);
-            Frame_Pregunta_3.setLocationRelativeTo(null);
+            Frame_Pregunta_1.setVisible(true);
+            Frame_Pregunta_1.setLocationRelativeTo(null);
         
         
         }
+          
+          
+         
         
-           
+
+       
           Paso_Pregunta_2=true;
         
        dispose(); 
         
-        
-        
-        
-        
-        
-        
-        
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
