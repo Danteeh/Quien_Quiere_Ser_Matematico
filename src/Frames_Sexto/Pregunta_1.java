@@ -9,7 +9,7 @@ import quien_quiere_ser_matematico.Ramdom;
 public class Pregunta_1 extends javax.swing.JFrame {
 
   
-     public static boolean Paso_Pregunta_1=false;
+     public static boolean Paso_Pregunta_1 = false;
    
     public Pregunta_1() {
         initComponents();
@@ -69,28 +69,31 @@ public class Pregunta_1 extends javax.swing.JFrame {
         obj_Aleatorio.N_Aleatorio=obj_Aleatorio.Aleatorio_Variable.nextInt(4);
         
           if (obj_Aleatorio.N_Aleatorio==0 && Paso_Pregunta_1==false ){
+              Paso_Pregunta_1=true;
               obj_Aleatorio.N_Aleatorio=2;
                
           }
           
           if (obj_Aleatorio.N_Aleatorio==1 && Paso_Pregunta_1== false){
-        
+            Paso_Pregunta_1=true;
             obj_Aleatorio.N_Aleatorio=2;
             
         }
         
      
        if (obj_Aleatorio.N_Aleatorio==2 && Pregunta_2.Paso_Pregunta_2 == true ){
-           
+           Paso_Pregunta_1=true;
             obj_Aleatorio.N_Aleatorio=3;
         }
        
         if (obj_Aleatorio.N_Aleatorio== 3 && Pregunta_3.Paso_Pregunta_3 == true  ){
-        
+           Paso_Pregunta_1=true;
             obj_Aleatorio.N_Aleatorio=4;
         }
         if (obj_Aleatorio.N_Aleatorio == 2 && Pregunta_2.Paso_Pregunta_2==false){
             
+            
+            Paso_Pregunta_1=true;
         Pregunta_2 Frame_Pregunta_2 = new Pregunta_2();
             
             Frame_Pregunta_2.setVisible(true);
@@ -103,17 +106,18 @@ public class Pregunta_1 extends javax.swing.JFrame {
         
         
          if (obj_Aleatorio.N_Aleatorio == 3 && Pregunta_3.Paso_Pregunta_3==false){
-            
+            Paso_Pregunta_1=true;
         Pregunta_3 Frame_Pregunta_3 = new Pregunta_3();
-            
+             
             Frame_Pregunta_3.setVisible(true);
             Frame_Pregunta_3.setLocationRelativeTo(null);
           
-        
+       
         }
            
-        System.out.println("Numero"+obj_Aleatorio.N_Aleatorio);
-        Paso_Pregunta_1=true;
+         
+        
+        
        dispose();
     
 

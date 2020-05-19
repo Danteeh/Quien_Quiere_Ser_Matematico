@@ -10,11 +10,9 @@ public class Pregunta_2 extends javax.swing.JFrame {
         
                     
     public Pregunta_2() {
-        
-        if (Pregunta_1.Paso_Pregunta_1== true){
-            System.out.println("Se paso por el uno");
-        }
-        
+         if (Pregunta_1.Paso_Pregunta_1 == true){
+            System.out.println("Se paso por el uno 100% real no fake");
+        } 
         initComponents();
                
     }
@@ -146,7 +144,8 @@ public class Pregunta_2 extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Pregunta_2().setVisible(true);
-         
+                
+        
                 
                 
             }
