@@ -6,6 +6,9 @@ import java.util.Random;
 public class Menu_de_inicio extends javax.swing.JFrame {
 
     public Menu_de_inicio() {
+        
+        
+       
         initComponents();
     }
 
@@ -14,25 +17,18 @@ public class Menu_de_inicio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Salir = new javax.swing.JButton();
         Boton_6Y7 = new javax.swing.JButton();
         Boton_8Y9 = new javax.swing.JButton();
         Boton_10 = new javax.swing.JButton();
+        Salir = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setAlwaysOnTop(true);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setMinimumSize(new java.awt.Dimension(1410, 800));
-        setPreferredSize(new java.awt.Dimension(1410, 800));
-        setResizable(false);
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        Salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/EXIT.jpg"))); // NOI18N
-        Salir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SalirActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1280, 20, 72, 74));
 
         Boton_6Y7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mano- 6 y 7.png"))); // NOI18N
         Boton_6Y7.addActionListener(new java.awt.event.ActionListener() {
@@ -58,7 +54,17 @@ public class Menu_de_inicio extends javax.swing.JFrame {
         });
         getContentPane().add(Boton_10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 70, 197, 170));
 
+        Salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/EXIT.jpg"))); // NOI18N
+        Salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SalirActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1280, 20, 72, 74));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo Editado.jpg"))); // NOI18N
+        jLabel1.setToolTipText("");
+        jLabel1.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1410, 800));
 
         pack();
