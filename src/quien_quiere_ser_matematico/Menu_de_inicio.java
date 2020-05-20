@@ -14,38 +14,57 @@ public class Menu_de_inicio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        Salir = new javax.swing.JButton();
+        Boton_6Y7 = new javax.swing.JButton();
+        Boton_8Y9 = new javax.swing.JButton();
+        Boton_10 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1410, 800));
+        setPreferredSize(new java.awt.Dimension(1410, 800));
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("6 y 7");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/EXIT.jpg"))); // NOI18N
+        Salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                SalirActionPerformed(evt);
             }
         });
+        getContentPane().add(Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1280, 20, 72, 74));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(108, 108, 108)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(513, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(273, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(104, 104, 104))
-        );
+        Boton_6Y7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mano- 6 y 7.png"))); // NOI18N
+        Boton_6Y7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Boton_6Y7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Boton_6Y7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 510, 197, 170));
+
+        Boton_8Y9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mano- 8 Y 9.png"))); // NOI18N
+        Boton_8Y9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Boton_8Y9ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Boton_8Y9, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 270, 197, 170));
+
+        Boton_10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mano- 10 y 11.png"))); // NOI18N
+        Boton_10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Boton_10ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Boton_10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 70, 197, 170));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo Editado.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1410, 800));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void Boton_6Y7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton_6Y7ActionPerformed
         
         Ramdom obj_Aleatorio =new Ramdom();
         
@@ -59,10 +78,7 @@ public class Menu_de_inicio extends javax.swing.JFrame {
    
         
         if (obj_Aleatorio.N_Aleatorio==1 ){
-            
-            
-            
-            
+             
             Pregunta_1 Frame_Pregunta_1 = new Pregunta_1();
             
             Frame_Pregunta_1.setVisible(true);
@@ -103,7 +119,28 @@ public class Menu_de_inicio extends javax.swing.JFrame {
         
         }    
           dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_Boton_6Y7ActionPerformed
+
+    
+    
+    
+    private void Boton_8Y9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton_8Y9ActionPerformed
+        
+        
+        
+    }//GEN-LAST:event_Boton_8Y9ActionPerformed
+
+    private void Boton_10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton_10ActionPerformed
+        
+        
+        
+    }//GEN-LAST:event_Boton_10ActionPerformed
+
+    private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed
+       
+        System.exit(WIDTH);
+       
+    }//GEN-LAST:event_SalirActionPerformed
 
     
     public static void main(String args[]) {
@@ -115,7 +152,14 @@ public class Menu_de_inicio extends javax.swing.JFrame {
         });
     }
 
+  
+    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton Boton_10;
+    private javax.swing.JButton Boton_6Y7;
+    private javax.swing.JButton Boton_8Y9;
+    private javax.swing.JButton Salir;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
