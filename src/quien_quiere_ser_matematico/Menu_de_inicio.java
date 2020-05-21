@@ -5,6 +5,12 @@ import java.util.Random;
 
 public class Menu_de_inicio extends javax.swing.JFrame {
 
+    
+    public static boolean Uso_boton_1=false;
+    public static boolean Uso_boton_2=false;
+    public static boolean Uso_boton_3=false;
+            
+            
     public Menu_de_inicio() {
         
         
