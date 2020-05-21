@@ -1,6 +1,7 @@
 
 package Frames_Sexto;
 
+import quien_quiere_ser_matematico.Menu_de_inicio;
 import quien_quiere_ser_matematico.Ramdom;
 
 public class Pregunta_2 extends javax.swing.JFrame {
@@ -11,9 +12,23 @@ public class Pregunta_2 extends javax.swing.JFrame {
                     
     public Pregunta_2() {
          
-        
+      
         initComponents();
-               
+      
+         if (Menu_de_inicio.Uso_boton_1==true){
+           
+            Boton_1Persona.setEnabled(false);
+        }
+         if (Menu_de_inicio.Uso_boton_2==true){
+           
+             Boton_Varios.setEnabled(false);
+        }
+          if (Menu_de_inicio.Uso_boton_3==true){
+            
+              Boton_50.setEnabled(false);
+        }
+        
+        
     }
 
  
@@ -21,48 +36,44 @@ public class Pregunta_2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        Boton_Responder = new javax.swing.JButton();
+        Boton_Varios = new javax.swing.JButton();
+        Boton_50 = new javax.swing.JButton();
+        Boton_1Persona = new javax.swing.JButton();
+        Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
-        jLabel1.setText("2");
-
-        jButton1.setText("Responder");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Boton_Responder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Botos- Respuesta.jpg"))); // NOI18N
+        Boton_Responder.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                Boton_ResponderActionPerformed(evt);
             }
         });
+        getContentPane().add(Boton_Responder, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 230, 125, 70));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(181, 181, 181)
-                .addComponent(jLabel1)
-                .addContainerGap(193, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(28, 28, 28))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(126, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(54, 54, 54)
-                .addComponent(jButton1)
-                .addGap(39, 39, 39))
-        );
+        Boton_Varios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Boton varias personas.jpg"))); // NOI18N
+        getContentPane().add(Boton_Varios, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, 80, 80));
+
+        Boton_50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Boton 50_50.jpg"))); // NOI18N
+        getContentPane().add(Boton_50, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 80, 80));
+
+        Boton_1Persona.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Boton 1 persona.jpg"))); // NOI18N
+        Boton_1Persona.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Boton_1PersonaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Boton_1Persona, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 80, 80));
+
+        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/PANTALLA- EDITADA.jpg"))); // NOI18N
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1410, 800));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void Boton_ResponderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton_ResponderActionPerformed
         
       
            Ramdom obj_Aleatorio =new Ramdom();
@@ -134,7 +145,11 @@ public class Pregunta_2 extends javax.swing.JFrame {
        dispose(); 
         
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_Boton_ResponderActionPerformed
+
+    private void Boton_1PersonaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton_1PersonaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Boton_1PersonaActionPerformed
 
 
     public static void main(String args[]) {
@@ -152,7 +167,10 @@ public class Pregunta_2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton Boton_1Persona;
+    private javax.swing.JButton Boton_50;
+    private javax.swing.JButton Boton_Responder;
+    private javax.swing.JButton Boton_Varios;
+    private javax.swing.JLabel Fondo;
     // End of variables declaration//GEN-END:variables
 }

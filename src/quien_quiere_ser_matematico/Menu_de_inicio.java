@@ -1,7 +1,6 @@
 package quien_quiere_ser_matematico;
 
 import Frames_Sexto.*;
-import java.util.Random;
 
 public class Menu_de_inicio extends javax.swing.JFrame {
 
@@ -32,6 +31,7 @@ public class Menu_de_inicio extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setEnabled(false);
         setMinimumSize(new java.awt.Dimension(1410, 800));
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -42,7 +42,7 @@ public class Menu_de_inicio extends javax.swing.JFrame {
                 Boton_6Y7ActionPerformed(evt);
             }
         });
-        getContentPane().add(Boton_6Y7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 510, 197, 170));
+        getContentPane().add(Boton_6Y7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 490, 197, 170));
 
         Boton_8Y9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mano- 8 Y 9.png"))); // NOI18N
         Boton_8Y9.addActionListener(new java.awt.event.ActionListener() {
@@ -50,7 +50,7 @@ public class Menu_de_inicio extends javax.swing.JFrame {
                 Boton_8Y9ActionPerformed(evt);
             }
         });
-        getContentPane().add(Boton_8Y9, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 270, 197, 170));
+        getContentPane().add(Boton_8Y9, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 310, 197, 170));
 
         Boton_10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Mano- 10 y 11.png"))); // NOI18N
         Boton_10.addActionListener(new java.awt.event.ActionListener() {
@@ -58,7 +58,7 @@ public class Menu_de_inicio extends javax.swing.JFrame {
                 Boton_10ActionPerformed(evt);
             }
         });
-        getContentPane().add(Boton_10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 70, 197, 170));
+        getContentPane().add(Boton_10, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 90, 197, 170));
 
         Salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/EXIT.jpg"))); // NOI18N
         Salir.addActionListener(new java.awt.event.ActionListener() {
@@ -66,7 +66,7 @@ public class Menu_de_inicio extends javax.swing.JFrame {
                 SalirActionPerformed(evt);
             }
         });
-        getContentPane().add(Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1280, 20, 72, 74));
+        getContentPane().add(Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1280, 40, 72, 74));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo Editado.jpg"))); // NOI18N
         jLabel1.setToolTipText("");

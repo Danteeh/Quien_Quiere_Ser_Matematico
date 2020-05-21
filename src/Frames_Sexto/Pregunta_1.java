@@ -1,8 +1,6 @@
 package Frames_Sexto;
 
-import java.util.*;
 import quien_quiere_ser_matematico.Menu_de_inicio;
-import Frames_Sexto.*;
 import javax.swing.JOptionPane;
 import quien_quiere_ser_matematico.Ramdom;
 
@@ -23,11 +21,11 @@ public class Pregunta_1 extends javax.swing.JFrame {
         }
          if (Menu_de_inicio.Uso_boton_2==true){
            
-             Boton_1Persona.setEnabled(false);
+             Boton_Varios.setEnabled(false);
         }
           if (Menu_de_inicio.Uso_boton_3==true){
             
-              Boton_1Persona.setEnabled(false);
+              Boton_50.setEnabled(false);
         }
         
         
@@ -202,7 +200,7 @@ public class Pregunta_1 extends javax.swing.JFrame {
 
     private void Boton_VariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton_VariosActionPerformed
        
-        Menu_de_inicio.Uso_boton_1= true;
+        Menu_de_inicio.Uso_boton_2= true;
         
         Boton_Varios.setEnabled(false);
         JOptionPane.showMessageDialog(null, "5 personas del publico dicen lo que crren como respuesta");
